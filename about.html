@@ -21,7 +21,6 @@
             color: white;
             display: flex;
             align-items: center;
-            justify-content: space-between;
             padding: 10px 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
@@ -31,6 +30,10 @@
         .d3 {
             display: flex;
             align-items: center;
+        }
+
+        .d2 {
+            padding-left: 25%;
         }
 
         .d1 img {
@@ -52,60 +55,28 @@
             text-decoration: underline;
         }
 
-        .d3 input {
-            padding: 5px;
-            border-radius: 3px;
-            border: 2px solid white;
-            border-radius: 60px;
-            margin-right: 5px;
-            background-color: rgb(1, 45, 92);
-            color: white;
-        }
 
-        .d3 button {
-            padding: 5px 10px;
-            margin-left: 5px;
-            background-color: white;
-            color: rgb(1, 95, 100);
-            border: none;
-            border-radius: 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .d3 button:hover {
-            background-color: #ddd;
-        }
 
         .content {
 
-            padding-left: 15%;
-            padding-top: 3%;
+            padding-left: 10%;
 
         }
 
         .content h1 {
+
             color: rgb(1, 45, 92);
             font-size: 63px;
-            width: 150px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .content p {
+
             color: white;
             font-weight: bold;
             font-size: larger;
-            width: 400px;
+            width: 84%;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .content button {
-            width: 120px;
-            height: 40px;
-            color: white;
-            background-color: rgb(1, 45, 92);
-            padding: 5px;
-            border-radius: 60px;
         }
 
         .social-icons {
@@ -130,6 +101,56 @@
             color: rgb(1, 45, 92);
             transform: scale(1.1);
         }
+
+        .team {
+            padding-left: 10%;
+        }
+
+        .team h1 {
+            color: white;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .team-cards {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            color: rgb(1, 45, 92);
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: rgb(85, 85, 85);
+        }
+
+        .card button {
+            background-color: rgb(1, 45, 92);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+         
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -145,13 +166,7 @@
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
         </div>
-        <div class="d3">
-            <form>
-            <input type="text" maxlength="25" placeholder="Enter a destination or a keyword" />
-            <button type="submit">Search</button>
-            <button type="reset">Clear</button>
-            </form>
-        </div>
+
     </nav>
     <div class="social-icons">
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -161,14 +176,38 @@
     </div>
 
     <div class="content">
-        <h1>EXPLORE DREAM DESTINATION</h1>
-        <p>It encourages exploration of unfamiliar territories ,embraacing
-            diverse cultures and landscapes while pursuing the desired destination
-            that captivates the heart and ignites a sense of wonder.
-        </p>
+        <h1>ABOUT US</h1>
         <p>
-            <button type="submit">BOOK NOW </button>
+
+            Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
+            services/products to our customers. Our mission is to
+            provide the best experience for people traveling to different destinations around the world.<br>
+            Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our
+            customers first and working together to achleve
+            our goals.<br>
+            Feel free to explore our website to learn more about what we offer!
         </p>
+    </div>
+    <div class="team">
+        <h1>OUR TEAM</h1>
+        <div class="team-cards">
+            <div class="card">
+                <h2>John Doe</h2>
+                <p>John Doe is responsible for...</p>
+                <button>CEO</button>
+            </div>
+            <div class="card">
+                <h2>Celina Thomas</h2>
+                <p>Celina Thomas is responsible for...</p>
+                <button>Team Lead</button>
+            </div>
+            <div class="card">
+                <h2>Mike Tysen</h2>
+                <p>Mike Tysen is responsible for...</p>
+                <button>Delivery Head</button>
+            </div>
+        </div>
+
     </div>
 </body>
 
