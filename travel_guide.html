@@ -77,6 +77,18 @@
             background-color: #ddd;
         }
 
+        .fullcon{
+            display: flex;
+            gap: 150px;
+        }
+        #result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
         .content {
 
             padding-left: 15%;
@@ -146,11 +158,9 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="d3">
-            <form>
-            <input type="text" maxlength="25" placeholder="Enter a destination or a keyword" />
-            <button type="submit">Search</button>
+            <input id="input" type="text" maxlength="25" placeholder="Enter a destination or a keyword" />
+            <button id="btnSearch" type="submit">Search</button>
             <button type="reset">Clear</button>
-            </form>
         </div>
     </nav>
     <div class="social-icons">
@@ -159,7 +169,7 @@
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-
+    <div class="fullcon">
     <div class="content">
         <h1>EXPLORE DREAM DESTINATION</h1>
         <p>It encourages exploration of unfamiliar territories ,embraacing
@@ -170,6 +180,11 @@
             <button type="submit">BOOK NOW </button>
         </p>
     </div>
+    <div id="result">
+
+    </div>
+    <script src='travel_guide.js'></script>
+</div>
 </body>
 
 </html>
